@@ -1,0 +1,11 @@
+<div class="parent">
+  <h2>{{title}}</h2>
+  <h3>Componente padre</h3>
+  <table>
+    <tr><td>Habilidad: </td><td><input [(ngModel)]="habilidad"></td></tr>
+    <tr><td>persona.name: </td><td><input [(ngModel)]="persona.name"></td></tr>
+  </table>
+  <p><button (click)="reset()">Reset Log</button></p>
+
+  <lch-on-changes [persona]="persona" [habilidad]="habilidad"></lch-on-changes>
+</div>
